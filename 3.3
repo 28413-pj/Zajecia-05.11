@@ -1,0 +1,57 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main(){
+
+    cout << "Rowananie kwadratowe ma postac ogolna" << endl;
+    cout << "ax^2 * bx * c" << endl;
+    int a;
+    int b;
+    int c;
+    int z;
+    int x;
+    int v;
+
+    cout << "podaj wartosc a: " << endl;
+    cin >> a;
+    cout << "podaj wartosc b: " << endl;
+    cin >> b;
+    cout << "podaj wartosc c: " << endl;
+    cin >> c;
+
+
+
+    if (a == 0) {
+        cout << "A nie moze rownac sie zero!!!" << endl;
+        cout << "podaj nowa wartosc a" << endl;
+        cin >> a;
+    }
+   
+    cout << "twoje rownanie to " << a<< "x^2*"<< b<< "x*"<< c << endl;
+   
+    int d = (b * b) - (4*a*c);
+    cout << d << endl;
+    z =  ( - b) / (2 * a);
+    x = ( - b - sqrt(d)) / (2 * a);
+    v = ( - b + sqrt(d)) / (2 * a);
+
+    if (d < 0) {
+        cout << "niestety ale nie ma rozwiazan tego rownania" << endl;
+    }
+    else if(d == 0){
+        cout << "jest jedno rozwiazanie i jest to: " << z << endl;
+    }
+    else if (d > 0) {
+        cout << "Sa dwa rozwiazania i o to one " << x << " i "<< v << endl;
+    }
+
+ 
+
+
+
+
+
+
+}
