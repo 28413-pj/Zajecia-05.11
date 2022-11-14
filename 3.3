@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 
@@ -32,7 +32,7 @@ int main(){
     cout << "twoje rownanie to " << a<< "x^2*"<< b<< "x*"<< c << endl;
    
     int d = (b * b) - (4*a*c);
-    cout << d << endl;
+    cout <<"twoja delta to: "<< d << endl;
     z =  ( - b) / (2 * a);
     x = ( - b - sqrt(d)) / (2 * a);
     v = ( - b + sqrt(d)) / (2 * a);
@@ -46,12 +46,4 @@ int main(){
     else if (d > 0) {
         cout << "Sa dwa rozwiazania i o to one " << x << " i "<< v << endl;
     }
-
- 
-
-
-
-
-
-
 }
